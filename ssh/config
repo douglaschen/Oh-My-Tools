@@ -1,0 +1,396 @@
+# github.com
+Host github.com
+    Port 22
+    HostName github.com
+
+# 06 puppet推送
+Host ca785.cnhz1.163.org
+    # shuttle.name = 06 推送puppet配置/ca785.cnhz1.163.org
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+# 05 开发机
+Host pubt1-nova62.yq.163.org
+    # shuttle.name = 05 开发机/pubt1-nova62.yq.163.org
+    ProxyCommand ssh -A wuxiangwei@115.238.122.38 -W %h:%p  # 跳板机为88
+
+Host pubbeta1-nova105.yq.163.org
+    # shuttle.name = 05 开发机/pubbeta1-nova105.yq.163.org
+    ProxyCommand ssh -A wuxiangwei@115.238.122.38 -W %h:%p  # 跳板机为88
+
+Host pubt1-ceph106.yq.163.org
+    # shuttle.name = 05 开发机/ceph测试环境/pubt1-ceph106.yq.163.org
+    ProxyCommand ssh -A wuxiangwei@115.238.122.38 -W %h:%p  # 跳板机为88
+
+Host pubt1-ceph107.yq.163.org
+    # shuttle.name = 05 开发机/ceph测试环境/pubt1-ceph107.yq.163.org
+    ProxyCommand ssh -A wuxiangwei@115.238.122.38 -W %h:%p  # 跳板机为88
+
+Host pubt1-ceph108.yq.163.org
+    # shuttle.name = 05 开发机/ceph测试环境/pubt1-ceph108.yq.163.org
+    ProxyCommand ssh -A wuxiangwei@115.238.122.38 -W %h:%p  # 跳板机为88
+
+# 00 跳板机
+Host 115.238.122.38_pubt1-sa1.yq.163.org
+    # shuttle.name = 00 跳板机/测试环境/115.238.122.38
+    HostName 115.238.122.38
+
+Host 114.113.199.88
+    # shuttle.name = 00 跳板机/线上环境/114.113.199.88
+    HostName 114.113.199.88
+
+Host 106.2.45.9
+    # shuttle.name = 00 跳板机/线上环境/106.2.45.9
+    HostName 106.2.45.9
+
+# 01 测试环境
+## 01 云网络联调
+Host 10-180-0-161
+    # shuttle.name = 01 测试环境/01 云网络联调/10-180-0-161
+    HostName 115.236.124.161
+
+Host 10-180-0-32
+    # shuttle.name = 01 测试环境/01 云网络联调/10-180-0-32
+    HostName 115.236.124.32
+
+Host 10-180-0-49
+    # shuttle.name = 01 测试环境/01 云网络联调/10-180-0-49
+    HostName 115.236.124.49
+
+## 02 公有云演练
+Host 10-180-0-183
+    # shuttle.name = 01 测试环境/02 公有云演练/10-180-0-183
+    HostName 115.236.124.183
+
+Host 10-180-0-184
+    # shuttle.name = 01 测试环境/02 公有云演练/10-180-0-184
+    HostName 115.236.124.184
+
+Host 10-180-0-215
+    # shuttle.name = 01 测试环境/02 公有云演练/10-180-0-215
+    HostName 115.236.124.215
+
+## 03 私有云公共测试
+Host 10-180-0-144
+    # shuttle.name = 01 测试环境/03 私有云公共测试/10-180-0-144
+    HostName 115.236.124.144
+
+Host 10-180-0-145
+    # shuttle.name = 01 测试环境/03 私有云公共测试/10-180-0-145
+    HostName 115.236.124.145
+
+Host 10-180-0-146
+    # shuttle.name = 01 测试环境/03 私有云公共测试/10-180-0-146
+    HostName 115.236.124.146
+
+## 04 公有云公共测试
+Host 10-180-0-111
+    # shuttle.name = 01 测试环境/04 公有云公共测试/10-180-0-111
+    HostName 115.236.124.111
+
+Host 10-180-0-123
+    # shuttle.name = 01 测试环境/04 公有云公共测试/10-180-0-123
+    HostName 115.236.124.123
+
+Host 10-180-0-126
+    # shuttle.name = 01 测试环境/04 公有云公共测试/10-180-0-126
+    HostName 115.236.124.126
+
+## 05 义桥公有云公共测试
+Host pubt1-ceph1
+    # shuttle.name = 01 测试环境/05 义桥公有云公共测试/pubt1-ceph1
+    HostName 10.185.0.100 
+    ProxyCommand ssh -A wuxiangwei@115.238.122.38 -W %h:%p  # 跳板机为88
+
+Host pubt1-ceph2
+    # shuttle.name = 01 测试环境/05 义桥公有云公共测试/pubt1-ceph2
+    HostName 10.185.0.101 
+    ProxyCommand ssh -A wuxiangwei@115.238.122.38 -W %h:%p  # 跳板机为88
+
+Host pubt1-ceph3
+    # shuttle.name = 01 测试环境/05 义桥公有云公共测试/pubt1-ceph3
+    HostName 10.185.0.102 
+    ProxyCommand ssh -A wuxiangwei@115.238.122.38 -W %h:%p  # 跳板机为88
+
+Host pubt1-ceph4
+    # shuttle.name = 01 测试环境/05 义桥公有云公共测试/pubt1-ceph4
+    HostName 10.185.0.103 
+    ProxyCommand ssh -A wuxiangwei@115.238.122.38 -W %h:%p  # 跳板机为88
+
+Host pubt1-ceph5
+    # shuttle.name = 01 测试环境/05 义桥公有云公共测试/pubt1-ceph5
+    HostName 10.185.0.104 
+    ProxyCommand ssh -A wuxiangwei@115.238.122.38 -W %h:%p  # 跳板机为88
+
+Host pubt1-ceph6
+    # shuttle.name = 01 测试环境/05 义桥公有云公共测试/pubt1-ceph6
+    HostName 10.185.0.105 
+    ProxyCommand ssh -A wuxiangwei@115.238.122.38 -W %h:%p  # 跳板机为88
+
+
+## 06 东冠公共测试
+## 07 义桥联调
+## 08 东冠联调
+
+# 02 线上环境
+#   |-- 01 私有云
+#   |    |-- 01 东冠私有云
+#   |    |-- 02 义桥私有云
+#   |    |-- 03 萧山b私有云
+#   |-- 02 公有云
+#        |-- 01 义桥公有云
+#        |-- 02 北京公有云
+#        |-- 03 东冠公有云
+
+## 01 私有云
+Host pri1-ceph10
+    # shuttle.name = 02 线上环境/01 私有云/01 义桥私有云/mon/pri1-ceph10
+    HostName 10.171.5.10 
+    # HostName ceph10.yq.pub.ntes
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host pri1-ceph16
+    # shuttle.name = 02 线上环境/01 私有云/01 义桥私有云/mon/pri1-ceph16
+    HostName 10.171.5.16 
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p
+
+Host pri1-ceph28
+    # shuttle.name = 02 线上环境/01 私有云/01 义桥私有云/mon/pri1-ceph28
+    HostName 10.171.5.28 
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p
+
+Host pri1-ceph145
+    # shuttle.name = 02 线上环境/01 私有云/01 义桥私有云/new-mon/pri1-ceph145
+    HostName 10.171.5.145
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p
+
+Host pri1-ceph146
+    # shuttle.name = 02 线上环境/01 私有云/01 义桥私有云/new-mon/pri1-ceph146
+    HostName 10.171.5.146
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p
+
+Host pri1-ceph147
+    # shuttle.name = 02 线上环境/01 私有云/01 义桥私有云/new-mon/pri1-ceph147
+    HostName 10.171.5.147
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p
+
+## 02 东冠私有云
+Host pri2-ceph10
+    # shuttle.name = 02 线上环境/01 私有云/02 东冠私有云/mon/pri2-ceph10
+    HostName 10.201.8.10
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host pri2-ceph11
+    # shuttle.name = 02 线上环境/01 私有云/02 东冠私有云/mon/pri2-ceph11
+    HostName 10.201.8.11
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host pri2-ceph22
+    # shuttle.name = 02 线上环境/01 私有云/02 东冠私有云/mon/pri2-ceph22
+    HostName 10.201.8.22
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host pri2-ceph94
+    # shuttle.name = 02 线上环境/01 私有云/02 东冠私有云/new-mon/pri2-ceph94
+    HostName 10.201.8.94
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host pri2-ceph95
+    # shuttle.name = 02 线上环境/01 私有云/02 东冠私有云/new-mon/pri2-ceph95
+    HostName 10.201.8.95
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host pri2-ceph96
+    # shuttle.name = 02 线上环境/01 私有云/02 东冠私有云/new-mon/pri2-ceph96
+    HostName 10.201.8.96
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+### 03 萧山b私有云 classb
+Host 10-165-0-40
+    # shuttle.name = 02 线上环境/01 私有云/03 萧山b私有云/mon/10-165-0-40
+    # HostName 223.252.219.40
+    HostName 10.165.0.40
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host 10-165-0-41
+    # shuttle.name = 02 线上环境/01 私有云/03 萧山b私有云/10-165-0-41
+    # HostName 223.252.219.41
+    HostName 10.165.0.41
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host 10-165-0-42
+    # shuttle.name = 02 线上环境/01 私有云/03 萧山b私有云/mon/10-165-0-42
+    # HostName 223.252.219.42
+    HostName 10.165.0.42
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host 10-165-0-43
+    # shuttle.name = 02 线上环境/01 私有云/03 萧山b私有云/10-165-0-43
+    # HostName 223.252.219.43
+    HostName 10.165.0.43
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host 10-165-0-44
+    # shuttle.name = 02 线上环境/01 私有云/03 萧山b私有云/mon/10-165-0-44
+    # HostName 223.252.219.44
+    HostName 10.165.0.44
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host 10-165-0-45
+    # shuttle.name = 02 线上环境/01 私有云/03 萧山b私有云/10-165-0-45
+    # HostName 223.252.219.45
+    HostName 10.165.0.45
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+### 04 萧山a私有云
+Host cba-ceph10
+    # shuttle.name = 02 线上环境/01 私有云/04 萧山a私有云/mon/cba-ceph10
+    HostName 10.122.12.10
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host cba-ceph28
+    # shuttle.name = 02 线上环境/01 私有云/04 萧山a私有云/mon/cba-ceph28
+    HostName 10.122.12.28
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+Host cba-ceph46
+    # shuttle.name = 02 线上环境/01 私有云/04 萧山a私有云/mon/cba-ceph46
+    HostName 10.122.12.46
+    ProxyCommand ssh -A wuxiangwei@114.113.199.88 -W %h:%p  # 跳板机为88
+
+## 02 公有云
+### 01 义桥公有云
+Host ceph10
+    # shuttle.name = 02 线上环境/02 公有云/01 义桥公有云/mon/ceph10.yq.pub.ntes
+    HostName 10.176.9.10
+    ProxyCommand ssh -A wuxiangwei@106.2.45.9 -W %h:%p  # 跳板机为88
+
+Host ceph11
+    # shuttle.name = 02 线上环境/02 公有云/01 义桥公有云/mon/ceph11.yq.pub.ntes
+    HostName 10.176.9.11
+    ProxyCommand ssh -A wuxiangwei@106.2.45.9 -W %h:%p  # 跳板机为88
+
+Host ceph14
+    # shuttle.name = 02 线上环境/02 公有云/01 义桥公有云/mon/ceph14.yq.pub.ntes
+    HostName 10.176.9.14
+    ProxyCommand ssh -A wuxiangwei@106.2.45.9 -W %h:%p  # 跳板机为88
+
+Host ceph93
+    # shuttle.name = 02 线上环境/02 公有云/01 义桥公有云/new-mon/ceph93.yq.pub.ntes
+    HostName 10.176.9.93
+    ProxyCommand ssh -A wuxiangwei@106.2.45.9 -W %h:%p  # 跳板机为88
+
+Host ceph96
+    # shuttle.name = 02 线上环境/02 公有云/01 义桥公有云/new-mon/ceph96.yq.pub.ntes
+    HostName 10.176.9.96
+    ProxyCommand ssh -A wuxiangwei@106.2.45.9 -W %h:%p  # 跳板机为88
+
+Host ceph99
+    # shuttle.name = 02 线上环境/02 公有云/01 义桥公有云/new-mon/ceph99.yq.pub.ntes
+    HostName 10.176.9.99
+    ProxyCommand ssh -A wuxiangwei@106.2.45.9 -W %h:%p  # 跳板机为88
+
+### 02 北京公有云
+Host pub1-ceph10
+    # shuttle.name = 02 线上环境/02 公有云/02 北京公有云/pub1-ceph10
+    HostName 10.106.4.10
+
+Host pub1-ceph14
+    # shuttle.name = 02 线上环境/02 公有云/02 北京公有云/pub1-ceph14
+    HostName 10.106.4.14
+
+Host pub1-ceph18
+    # shuttle.name = 02 线上环境/02 公有云/02 北京公有云/pub1-ceph18
+    HostName 10.106.4.18
+
+### 03 东冠公有云
+Host pub2-ceph10
+    # shuttle.name = 02 线上环境/02 公有云/03 东冠公有云/put2-ceph10
+    HostName 10.206.4.10
+
+Host pub2-ceph11
+    # shuttle.name = 02 线上环境/02 公有云/03 东冠公有云/put2-ceph11
+    HostName 10.206.4.11
+
+Host pub2-ceph12
+    # shuttle.name = 02 线上环境/02 公有云/03 东冠公有云/put2-ceph12
+    HostName 10.206.4.12
+
+Host pub2-ceph64
+    # shuttle.name = 02 线上环境/02 公有云/03 东冠公有云/put2-ceph64
+    HostName 10.206.4.64
+
+# 03 物理测试机
+Host 10-180-0-49
+    # shuttle.name = 03 物理测试机/10-180-0-49
+    HostName 115.236.124.49
+
+Host 10-180-0-30
+    # shuttle.name = 03 物理测试机/10-180-0-30
+    HostName 115.236.124.30
+
+Host 10-180-0-31
+    # shuttle.name = 03 物理测试机/10-180-0-31
+    HostName 115.236.124.31
+
+Host 10-180-0-35
+    # shuttle.name = 03 物理测试机/10-180-0-35
+    HostName 115.236.124.35
+
+Host 10-180-0-36
+    # shuttle.name = 03 物理测试机/10-180-0-36
+    HostName 115.236.124.36
+
+Host 10-180-0-46
+    # shuttle.name = 03 物理测试机/10-180-0-46
+    HostName 115.236.124.46
+
+# 04 虚拟机
+
+Host ceph1
+    # shuttle.name = 04 虚拟机/debian8/ceph1
+    User root
+    HostName 10.18.192.20
+    Port 22
+
+Host ceph2
+    # shuttle.name = 04 虚拟机/debian8/ceph2
+    User root
+    HostName 10.18.192.21
+    Port 22
+
+Host ceph3
+    # shuttle.name = 04 虚拟机/debian8/ceph3
+    User root
+    HostName 10.18.192.22
+    Port 22
+
+Host compiler2
+    # shuttle.name = 04 虚拟机/debian8/compiler2
+    User root
+    HostName 10.18.192.19
+    Port 22
+
+Host node1
+    # shuttle.name = 04 虚拟机/debian7/node1
+    User root
+    HostName 10.18.192.14
+    Port 22
+
+Host vm02
+    # shuttle.name = 04 虚拟机/debian8/vm02
+    User root
+    HostName 10.18.192.17
+    Port 22
+
+Host w2
+    # shuttle.name = 04 虚拟机/debian9/w2
+    User root
+    HostName 10.18.192.24
+    Port 22
+
+# single host
+
+Host pubt1-sa1.yq.163.com
+    User wuxiangwei
+    HostName 115.238.122.38
+    Port 1046
